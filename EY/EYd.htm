@@ -1,0 +1,75 @@
+<html> 
+
+<head>
+	<title>EIA Pulse</title>
+  <link rel="stylesheet" href="EYd.css">
+	<script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart','geochart','treemap']}]
+          }">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src = "EYd.js"></script>
+</head>
+
+<body>
+
+<div id = "wrapper">
+	<div id = "header">
+		<h1> Public Data Pulse </h1>
+			<p>
+				This page provides up to date charts using the Google Chart API of publicly available data from Quandl.com
+			</p>
+	</div>
+
+	<div id = "container">
+		<div id = "sidebar">
+			<form id = "chartform">
+				<div id = "buttons">
+					<h4> Search </h4>
+						<div class ="group industry"> 
+							<select id="industrydropdown" required size="5">
+							  <option value = "DEFAULT">- select -</option>
+							  <option value="OANDG">Oil and Gas</option>
+							  <option value="UANDP">Utilities and Power</option>
+							  <option value="STOCKS">Stocks</option>
+							  <option value="DEMO">Demographics</option>
+							  <option value="ECON">Economy</option>
+							</select>
+						</div> 
+
+		
+						 <div class ="group chart"> 
+							<!-- <label for="chartdropdown"> Chart:     </label> -->
+							<select id="chartdropdown" style = "width: 138px;">
+							</select>
+						 </div> 
+						
+						<p>
+							<button id="submit" type="button"> Go </button>	
+						</p>
+				</div>
+			</form>
+		</div> 
+	
+		<div id = "panels">
+			<div id="tabPanel1" class = "panel" style="display:block">
+				<p id='curve_chart'></p>
+			</div>	
+     
+		</div>
+
+	</div>
+	
+	<div id = "footer">
+	</div>
+</div>
+
+
+</body>
+
+
+</html>

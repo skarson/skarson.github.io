@@ -1,0 +1,75 @@
+	html {
+    margin: 0;
+	padding: 0;
+	background-color: white;
+	}
+	
+
+
+	h1{
+	color: #808080;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2em;
+    margin: 0 0 .4em;
+    padding: 5px 10px;
+	} 
+
+
+  body {
+    color:#808080;
+    width: 100%;
+    margin: 0 auto;
+    font: 100% Arial, Helvetica, sans-serif;
+    padding: 1em 50px;
+    background: white;
+  }
+
+  button{
+    font-family: arial;
+  }
+
+  p{
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+
+  }
+  
+ #header{
+ background-image: url(_images/blog_banner.jpg);
+ } 
+  
+#container
+	{
+		/* can float if we want to contain */
+		overflow: auto;
+	}
+  
+  #sidebar {
+			float:left;
+			background:white;
+			border: 1px solid gray;
+			padding: 0 4em 175px 3em;
+			margin-bottom: 20px;
+  }
+  
+  #panels{
+		float: left;
+		width: 4em;
+		margin: 0 0em 0em 0em;
+		margin-bottom: 20px;
+		}
+  
+  #footer{
+		clear: both;
+		border-top: 10px solid #FFE600;
+		}
+		
+  .buttonlist{background:yellow;}
+  
+  #chartdropdown {
+		margin: 1em 0em 1em 0em;
+  }
