@@ -14,7 +14,7 @@ var sdk = new CitySDK();
 var census = sdk.modules.census;
 
 //enabling the census API
-var apiKey = prompt("Please enter your Census API Key", "API key");
+var apiKey = "5ccb4daf4f454ef036db43510c458e477a74c7e9";
 census.enable(apiKey);
 
 censusSDK();
