@@ -4,6 +4,7 @@ function callback(data){
     var rows;
     var cells = data.feed.entry;
     
+    //Cells.length controls which row
     for (var i = 0; i < cells.length; i++){
         var rowObj = {};
         rowObj.timestamp = cells[i].title.$t;
@@ -16,10 +17,20 @@ function callback(data){
     }
     
     var raw = document.createElement('p');
-    // raw.innerText = JSON.stringify(rows);
+    //raw.innerText = JSON.stringify(rows);
     document.body.appendChild(raw);
     console.log(rows)
-    $('body').append(`The following information is for ${rows.shootnumber} from ${rows.productioncompany} `)
+    console.log(rowObj)
+    $('body').append(`Hello all,`)
+    $('body').append(`<br/>`)
+    $('body').append(`<br/>`)
+    $('body').append(` The following information is for shootnumber ${rows.shootnumber} from ${rows.productioncompany}. `)
+    $('body').append(`Please show up at ${rows.locationofshoot} on ${rows.date}, at ${rows.breakfast} A.M. `)
+    $('body').append(`<br/>`)
+    $('body').append(`<br/>`)
+    $('body').append(`Cheers,`)
+    $('body').append(`<br/>`)
+    $('body').append(`Steve Karson, ${rows.productionmobilenumbers}`)
 }
 
 $(document).ready(function(){
